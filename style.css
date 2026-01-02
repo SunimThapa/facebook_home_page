@@ -415,7 +415,116 @@ body, html {
     width: 30px;
     height: 30px;
   }
+  @media (max-width: 1024px) {
+    .header{
+      height: 60px;
+    }
+
+  .header_middleIcon {
+    margin-left: 280px;
+    gap: 30px;
+  }
+
+  .header_endIcon {
+    display: none;
+  }
+
+ .menu-section {
+    display: none;
+  }
+  #cp_last_icons{
+    margin-left: 280px;
+  }
   
+  .contact_section {
+    display: none;
+  }
+
+  .content {
+  justify-content: center;
+}
+
+  .content_post {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+
+  
+  .menu-section {
+    display: none;
+  }
+
+
+  .content_post {
+    margin-left: 0;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+ 
+  .search_box {
+    display: none;
+  }
+
+  .header_middleIcon {
+    margin-left: auto;
+    gap: 20px;
+  }
+
+  .header_endIcon {
+    margin-left: auto;
+  }
+
+
+  .stories {
+    height: 180px;
+  }
+
+  .story {
+    min-width: 110px;
+  }
+
+  
+  .posts {
+    height: auto;
+  }
+
+  .post_img {
+    height: 300px;
+  }
+
+  .interaction_button {
+    width: auto;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+
+  .header {
+    height: 45px;
+  }
+
+  .home_image_icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .post_img {
+    height: 250px;
+  }
+
+  .caption {
+    font-size: 16px;
+  }
+
+  .interaction_button span {
+    display: none; 
+  }
+}
+
 
 
 
