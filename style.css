@@ -90,7 +90,7 @@ body, html {
     height: 40px;           
     width: 40px;
     border-radius: 50%;  
-    background-color: rgb(216, 216, 216);           /
+    background-color: rgb(216, 216, 216);           
   }
   
   .fa_endIcon:hover{
@@ -524,6 +524,7 @@ body, html {
     display: none; 
   }
 }
+
 
 
 
