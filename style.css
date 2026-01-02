@@ -1,0 +1,421 @@
+* {
+    box-sizing: border-box;
+  }
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 243, 243);
+}
+.header{
+    position: fixed;
+    z-index: 9999;
+    height:50px;
+   width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.fb_logo{
+   border-radius: 100%;
+   margin-left: 10px;
+}
+.search_box{
+    position: relative;
+    width: 220px;
+    height: 35px;
+    margin-left: 20px;
+}
+.search_input{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 236, 236, 0.781);
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    padding: 8px 10px 8px 35px;
+}
+.search_icon{
+    position: absolute;
+    top: 8px;
+    left: 7px;
+}
+.header_middleIcon{
+    margin-left: 210px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.home_image_icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.image_container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 8px;          
+    border-radius: 6px;    
+    transition: background 0.2s ease;
+  }
+  .image_container:hover {
+    background-color: #e5e5e5;   /* light gray on hover */
+  }
+#fa_fbHeader_icons{
+    color: rgb(121, 118, 118);
+    font-size: 20px;
+    }
+#fa_fbHeader_icons:hover {
+        cursor: pointer;
+        color: blue;
+    
+}
+.header_endIcon{
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+.fa_endIcon {
+    display: flex;           /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 40px;            /* Set a height if needed */
+    width: 40px;
+    border-radius: 50%;  
+    background-color: rgb(216, 216, 216);           /* Set a width if needed */
+  }
+  
+  .fa_endIcon:hover{
+    background-color: rgb(194, 191, 191);
+  }
+  #endIcon{
+    display: block;
+   width: 20px;
+   height: 20px;
+  }
+  .endIcon_extra{
+    display: block;
+    height: 40px;
+    width: 40px;
+  }
+
+  .content{
+    position: relative;
+  padding-top: 60px;
+  display: flex;
+  }
+  
+  .menu-section{
+    position: fixed;
+    width: 300px;
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: 'Segoe UI';
+    font-weight: 550;
+  }
+  .menu-section:hover{
+    overflow-y: auto;
+  }
+  .left_sideButton{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+  }
+  .left_sideButton:hover{
+    background-color: rgb(220, 218, 218);
+    cursor: pointer;
+  }
+  .image_limit {
+    width: 30px;     /* fixed size */
+    height: 30px;/* keeps it inside the box */
+  }
+  #menu_images{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .extra_style{
+    border-radius: 50%;
+  }
+
+  .content_post{
+    margin-top: 10px;
+    margin-left: 380px;
+    width: 630px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+  }
+  .create_post{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+  }
+  #cP_pp{
+    height: 35px;
+    width: 35px;
+  }
+  #cP_input{
+    width:410px;
+    height: 37px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e5e5e5;
+    font-size: medium;
+  }
+  #cp_last_icons{
+    width: 50px;
+    display: flex;
+    gap: 15px;
+  }
+  #cP_other_icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .stories{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+   display: flex;
+    gap: 10px;
+    overflow-x: hidden;     /* scrolling left-right */
+  overflow-y: hidden;
+  padding-bottom: 10px;        /* space for scrollbar */
+  flex-shrink: 0;
+  scroll-behavior: smooth;
+
+  }
+  .stories:hover{
+    overflow-x: auto;
+  }
+  .stories::-webkit-scrollbar {
+    height: 8px;                 /* small height instead of display:none */
+  }
+  .stories::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 4px;
+  }
+  .story{
+    position: relative;
+    min-width: 130px; 
+    height: 100%;
+    background-color: rgb(185, 185, 185);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+  }
+  #story_pp{
+    margin-top: 5px;
+    width: 100%;
+    height: 130px;
+  }
+  #story_add{
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    width: 35px;
+    height: 35px;
+  }
+  .story_pp{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid blue;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  #create_storyEnd{
+    flex: 1;
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+  }
+  .story_frame{
+    border-radius: 13px;
+    width: 130px;
+    height: 190px;
+  }
+  .posts{
+    position: relative;
+    width: 100%;
+    height: 610px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .post_header{
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 10px;
+  }
+  .posts_pp{
+    width: 40px;
+    height: 40px;
+    border: 3px solid blue;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  #post_public{
+    width: 15px;
+    height: 15px;
+  }
+  .post-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;      
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+  
+  .post-info p {
+    margin: 0;  
+    color: gray;   
+  }
+  .caption{
+    height: 23px;
+    padding: 0 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Segoe UI';
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(189, 188, 188);
+    padding-bottom: 23px;
+  }
+  .post_img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .post_interaction{
+    flex: 1;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .interacted_number{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    font-family: 'Segoe UI';
+    font-weight: 550;
+    font-size: 15px;
+    color: gray;
+  }
+  #like_icon{
+    width: 20px;
+    height: 20px;
+  }
+  #like_part{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .interaction_buttons{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .interaction_button{
+    background-color: white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: medium;
+    font-weight: 550;
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+  }
+  .interaction_icon{
+    width: 25px;
+    height: 25px;
+  }
+  .post_img-3{
+    width: 100%;
+    height: 400px;
+  }
+  .contact_section{
+    position: fixed;
+    top: 65px;          /* distance from top */
+    right: 0px; 
+    width: 320px;
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    overflow: hidden;
+    font-size: 18px;
+    font-family: 'Segoe UI';
+    font-weight: 550;
+  }
+  .contact_section:hover{
+    overflow-y: auto;
+  }
+  .contact_header{
+    width: 320px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    color: grey;
+  }
+  #contact_icons{
+    width: 30px;
+    height: 30px;
+  }
+  
+
+
+
