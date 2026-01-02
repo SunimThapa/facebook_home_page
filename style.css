@@ -65,7 +65,7 @@ body, html {
     transition: background 0.2s ease;
   }
   .image_container:hover {
-    background-color: #e5e5e5;   /* light gray on hover */
+    background-color: #e5e5e5;   
   }
 #fa_fbHeader_icons{
     color: rgb(121, 118, 118);
@@ -84,13 +84,13 @@ body, html {
     gap: 15px;
 }
 .fa_endIcon {
-    display: flex;           /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    height: 40px;            /* Set a height if needed */
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    height: 40px;           
     width: 40px;
     border-radius: 50%;  
-    background-color: rgb(216, 216, 216);           /* Set a width if needed */
+    background-color: rgb(216, 216, 216);           /
   }
   
   .fa_endIcon:hover{
@@ -146,8 +146,8 @@ body, html {
     cursor: pointer;
   }
   .image_limit {
-    width: 30px;     /* fixed size */
-    height: 30px;/* keeps it inside the box */
+    width: 30px;    
+    height: 30px;
   }
   #menu_images{
     width: 100%;
@@ -162,7 +162,7 @@ body, html {
     margin-top: 10px;
     margin-left: 380px;
     width: 630px;
-    /* border: 1px solid black; */
+
     border-radius: 10px;
   }
   .create_post{
@@ -206,9 +206,9 @@ body, html {
     height: 200px;
    display: flex;
     gap: 10px;
-    overflow-x: hidden;     /* scrolling left-right */
+    overflow-x: hidden;     
   overflow-y: hidden;
-  padding-bottom: 10px;        /* space for scrollbar */
+  padding-bottom: 10px;        
   flex-shrink: 0;
   scroll-behavior: smooth;
 
@@ -217,7 +217,7 @@ body, html {
     overflow-x: auto;
   }
   .stories::-webkit-scrollbar {
-    height: 8px;                 /* small height instead of display:none */
+    height: 8px;                 
   }
   .stories::-webkit-scrollbar-thumb {
     background-color: rgba(0,0,0,0.3);
@@ -386,7 +386,7 @@ body, html {
   }
   .contact_section{
     position: fixed;
-    top: 65px;          /* distance from top */
+    top: 65px;        
     right: 0px; 
     width: 320px;
     height: 575px;
@@ -524,6 +524,7 @@ body, html {
     display: none; 
   }
 }
+
 
 
 
