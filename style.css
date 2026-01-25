@@ -452,7 +452,12 @@ body, html {
 }
 @media (max-width: 768px) {
 
-  
+  .header_middleIcon {
+   margin-right: 50px;
+  }
+  #cp_last_icons {
+display: none;
+  }
   .menu-section {
     display: none;
   }
